@@ -1,28 +1,9 @@
 import os
-import threading
-import time
 import requests
 import streamlit as st
-import uvicorn
 
-from server import app as fastapi_app
-
-
-def run_fastapi():
-    try:
-        uvicorn.run(fastapi_app, host="127.0.0.1", port=8000, log_level="warning")
-    except Exception:
-        pass
-
-
-if "fastapi_started" not in st.session_state:
-    try:
-        res = requests.get("http://127.0.0.1:8000/api/trending", timeout=0.6)
-    except Exception:
-        t = threading.Thread(target=run_fastapi, daemon=True)
-        t.start()
-        time.sleep(1.2)
-    st.session_state.fastapi_started = True
+# Your deployed FastAPI backend URL
+BACKEND_URL = os.getenv("BACKEND_URL", "https://movie-recommender-3i6i.onrender.com")
 
 st.set_page_config(
     page_title="CinematicAI — Universal Movie Platform",
@@ -54,6 +35,6 @@ st.markdown(
 )
 
 if hasattr(st, "iframe"):
-    st.iframe("http://127.0.0.1:8000", height=980)
+    st.iframe(BACKEND_URL, height=980)
 else:
-    st.components.v1.iframe("http://127.0.0.1:8000", height=980, scrolling=True)
+    st.components.v1.iframe(BACKEND_URL, height=980, scrolling=True)
