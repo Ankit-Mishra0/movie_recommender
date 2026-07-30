@@ -1,10 +1,10 @@
-# 🎬 Movie Recommender System
+# Movie Recommender System
 
 A full-stack movie recommendation web app built for my machine learning project. It uses **Content-Based Filtering (TF-IDF + Cosine Similarity)** combined with the **TMDB API** to recommend movies based on your personal taste, rate your favorites, and explain _why_ each movie was recommended.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### 1. Home / Discover Page
 
@@ -16,18 +16,18 @@ A full-stack movie recommendation web app built for my machine learning project.
 
 ---
 
-## ✨ Main Features
+## Main Features
 
-- 🔍 **Search Any Movie**: Live search connected to TMDB API (800,000+ movies).
-- 🧠 **Smart Recommendations**: Uses TF-IDF vector similarity across genres, overviews, directors, keywords, and lead cast.
-- 💡 **Explainable AI**: Shows clear reasons why each movie was recommended for you.
-- 🎬 **Trailers & Cast Info**: Watch YouTube trailers and view director & lead cast details.
-- 🔖 **Watchlist**: Bookmark movies to save them in your personal watchlist.
-- 📊 **Taste Insights**: Interactive analytics showing your top preferred genres and rating habits.
+- **Search Any Movie**: Live search connected to TMDB API (800,000+ movies).
+- **Smart Recommendations**: Uses TF-IDF vector similarity across genres, overviews, directors, keywords, and lead cast.
+- **Explainable AI**: Shows clear reasons why each movie was recommended for you.
+- **Trailers & Cast Info**: Watch YouTube trailers and view director & lead cast details.
+- **Watchlist**: Bookmark movies to save them in your personal watchlist.
+- **Taste Insights**: Interactive analytics showing your top preferred genres and rating habits.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Python, FastAPI, Streamlit, Pandas, Scikit-Learn (TF-IDF), Requests
 - **Frontend**: HTML5, Vanilla CSS3 (Dark Glassmorphism UI), JavaScript
@@ -35,7 +35,7 @@ A full-stack movie recommendation web app built for my machine learning project.
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart Guide
 
 ### 1. Clone & Set Up Virtual Environment
 
@@ -68,7 +68,7 @@ _(Or run the Streamlit version: `streamlit run app.py`)_
 
 ---
 
-## 📊 Run Data Analysis Script
+## Run Data Analysis Script
 
 To run the Netflix data analysis and generate charts:
 
